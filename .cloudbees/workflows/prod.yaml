@@ -10,5 +10,5 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: aspm-test
-          artifact-id: 1dfd6f6e-5527-4e58-9144-7ad25c91b4d1
+          artifact-id: 3cc82bf4-5e76-490a-a31a-dbf038eafec5
           target-environment: ecr-qa
