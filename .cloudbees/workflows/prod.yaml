@@ -10,5 +10,15 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: aspm-test
-          artifact-id: 3cc82bf4-5e76-490a-a31a-dbf038eafec5
+          artifact-id: b27c4063-3cf7-4731-b1c5-f6b1a903295f
           target-environment: ecr-qa
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: preprod
+          artifact-id: b27c4063-3cf7-4731-b1c5-f6b1a903295f
+          target-environment: PREPROD
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: aspm-qa-test
+          artifact-id: b27c4063-3cf7-4731-b1c5-f6b1a903295f
+          target-environment: aspm-qa-test
