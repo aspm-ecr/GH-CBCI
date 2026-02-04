@@ -10,6 +10,7 @@ on:
       manifest:
         type: string
         required: true
+  workflow_dispatch:
 jobs:
   resolved-SVMultiLangRepo:
     if: ${{ fromJSON(inputs.manifest)['resolved-SVMultiLangRepo']['qa-go-repo'].deploy }}
