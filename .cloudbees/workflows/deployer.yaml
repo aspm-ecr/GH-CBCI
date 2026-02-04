@@ -20,8 +20,6 @@ jobs:
     needs:
       - Approval
   Approval:
-    timeout-minutes: 4320
-    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
     with:
       instructions: Test
       disallowLaunchByUser: false
@@ -30,3 +28,8 @@ jobs:
       approvalInputs: |
         test:
           type: string
+        test2:
+          type: string
+          default: Reject
+    timeout-minutes: 4320
+    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
